@@ -18,6 +18,7 @@
 		E45A491E27B60E6900CBD876 /* OCCommonLibraryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A491D27B60E6900CBD876 /* OCCommonLibraryUITests.m */; };
 		E45A492027B60E6900CBD876 /* OCCommonLibraryUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A491F27B60E6900CBD876 /* OCCommonLibraryUITestsLaunchTests.m */; };
 		E45A492E27B6134500CBD876 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A492D27B6134500CBD876 /* Tools.m */; };
+		E45A493127B6146000CBD876 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A492F27B6146000CBD876 /* BaseVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		E45A491F27B60E6900CBD876 /* OCCommonLibraryUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCommonLibraryUITestsLaunchTests.m; sourceTree = "<group>"; };
 		E45A492C27B6134500CBD876 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		E45A492D27B6134500CBD876 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		E45A492F27B6146000CBD876 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		E45A493027B6146000CBD876 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				E45A48F827B60E6700CBD876 /* AppDelegate.m */,
 				E45A48FD27B60E6700CBD876 /* ViewController.h */,
 				E45A48FE27B60E6700CBD876 /* ViewController.m */,
+				E45A493027B6146000CBD876 /* BaseVC.h */,
+				E45A492F27B6146000CBD876 /* BaseVC.m */,
 				E45A490027B60E6700CBD876 /* Main.storyboard */,
 				E45A490327B60E6800CBD876 /* Assets.xcassets */,
 				E45A490527B60E6800CBD876 /* LaunchScreen.storyboard */,
@@ -337,6 +342,7 @@
 				E45A48FF27B60E6700CBD876 /* ViewController.m in Sources */,
 				E45A48F927B60E6700CBD876 /* AppDelegate.m in Sources */,
 				E45A490A27B60E6800CBD876 /* main.m in Sources */,
+				E45A493127B6146000CBD876 /* BaseVC.m in Sources */,
 				E45A492E27B6134500CBD876 /* Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +455,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -501,6 +508,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
