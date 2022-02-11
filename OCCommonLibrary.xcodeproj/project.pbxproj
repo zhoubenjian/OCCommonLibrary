@@ -17,6 +17,7 @@
 		E45A491427B60E6900CBD876 /* OCCommonLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A491327B60E6900CBD876 /* OCCommonLibraryTests.m */; };
 		E45A491E27B60E6900CBD876 /* OCCommonLibraryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A491D27B60E6900CBD876 /* OCCommonLibraryUITests.m */; };
 		E45A492027B60E6900CBD876 /* OCCommonLibraryUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A491F27B60E6900CBD876 /* OCCommonLibraryUITestsLaunchTests.m */; };
+		E45A492E27B6134500CBD876 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A492D27B6134500CBD876 /* Tools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		E45A491927B60E6900CBD876 /* OCCommonLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCCommonLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45A491D27B60E6900CBD876 /* OCCommonLibraryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCommonLibraryUITests.m; sourceTree = "<group>"; };
 		E45A491F27B60E6900CBD876 /* OCCommonLibraryUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCommonLibraryUITestsLaunchTests.m; sourceTree = "<group>"; };
+		E45A492C27B6134500CBD876 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		E45A492D27B6134500CBD876 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				E45A490527B60E6800CBD876 /* LaunchScreen.storyboard */,
 				E45A490827B60E6800CBD876 /* Info.plist */,
 				E45A490927B60E6800CBD876 /* main.m */,
+				E45A492C27B6134500CBD876 /* Tools.h */,
+				E45A492D27B6134500CBD876 /* Tools.m */,
 			);
 			path = OCCommonLibrary;
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 				E45A48FF27B60E6700CBD876 /* ViewController.m in Sources */,
 				E45A48F927B60E6700CBD876 /* AppDelegate.m in Sources */,
 				E45A490A27B60E6800CBD876 /* main.m in Sources */,
+				E45A492E27B6134500CBD876 /* Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

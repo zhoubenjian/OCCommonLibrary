@@ -6,6 +6,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
+#import "Tools.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,33 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
+}
+
+- (void)createNavigationVC {
+    
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.navigation = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    
+    /* 修复Swift5.5后，iOS 13导航栏黑色背景 */
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+        appearance.backgroundColor = [Tools colorWithHex:@"#EE82EE"];
+        // 避免导航栏标题无效
+        [appearance setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:17.0],
+                                             NSForegroundColorAttributeName:[UIColor whiteColor]}];
+        
+        self.navigation.navigationBar.standardAppearance = appearance;
+        self.navigation.navigationBar.scrollEdgeAppearance = appearance;
+    }
+    /* 修复Swift5.5后，iOS 13导航栏黑色背景 */
+    
+    [self.navigation.navigationBar setTranslucent:NO];
+    [self.navigation.navigationBar setShadowImage:[[UIImage alloc] init]];
+    [self.navigation.navigationBar setBarTintColor:[Tools colorWithHex:@"#EE82EE"]];
+    [self.navigation.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:17.0],
+                                                     NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.window.rootViewController = self.navigation;
+    [self.window makeKeyAndVisible];
 }
 
 
