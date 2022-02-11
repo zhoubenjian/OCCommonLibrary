@@ -68,7 +68,7 @@
 
 // 加载数据
 - (void)loadData:(NSMutableArray *)dataArray {
-    self.dataArray = [dataArray mutableCopy];
+    self.data = [dataArray mutableCopy];
     // 刷新数据
     [self.tb reloadData];
 }
@@ -95,7 +95,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataArray.count;
+    return self.data.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -107,7 +107,7 @@
     if (cell == nil) {
         cell = [[HomeTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    cell.label.text = [NSString stringWithFormat:@"%@", self.dataArray[indexPath.row]];
+    cell.label.text = [NSString stringWithFormat:@"%@", self.data[indexPath.row]];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;

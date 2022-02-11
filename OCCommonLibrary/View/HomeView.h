@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) UIView *contentView;
 @property (strong, nonatomic) UITableView *tb;
 
-@property (strong, nonatomic) NSMutableArray *dataArray;
+@property (strong, nonatomic) NSMutableArray *data;
 
 // 加载数据
 - (void)loadData:(NSMutableArray *)dataArray;
