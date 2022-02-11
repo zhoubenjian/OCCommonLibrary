@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34507053896425C471F73F3A /* Pods_OCCommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29792C05246BEB3DC2EE2E46 /* Pods_OCCommonLibrary.framework */; };
+		E455E9E027B6371500BFE169 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E455E9DF27B6371500BFE169 /* HomeTableViewCell.m */; };
 		E45A48F927B60E6700CBD876 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A48F827B60E6700CBD876 /* AppDelegate.m */; };
 		E45A48FF27B60E6700CBD876 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A48FE27B60E6700CBD876 /* ViewController.m */; };
 		E45A490227B60E6700CBD876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45A490027B60E6700CBD876 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 		E45A492027B60E6900CBD876 /* OCCommonLibraryUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A491F27B60E6900CBD876 /* OCCommonLibraryUITestsLaunchTests.m */; };
 		E45A492E27B6134500CBD876 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A492D27B6134500CBD876 /* Tools.m */; };
 		E45A493127B6146000CBD876 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A492F27B6146000CBD876 /* BaseVC.m */; };
+		E45A493727B617DF00CBD876 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A493627B617DF00CBD876 /* HomeVC.m */; };
+		E45A493D27B6183900CBD876 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A493C27B6183900CBD876 /* HomeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 		29792C05246BEB3DC2EE2E46 /* Pods_OCCommonLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCCommonLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6834BF76944A16A4D3AD9B8A /* Pods-OCCommonLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCommonLibrary.debug.xcconfig"; path = "Target Support Files/Pods-OCCommonLibrary/Pods-OCCommonLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		D1968A3CE295F0352A0E2C77 /* Pods-OCCommonLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCommonLibrary.release.xcconfig"; path = "Target Support Files/Pods-OCCommonLibrary/Pods-OCCommonLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		E455E9DE27B6371500BFE169 /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		E455E9DF27B6371500BFE169 /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		E45A48F427B60E6700CBD876 /* OCCommonLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCCommonLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45A48F727B60E6700CBD876 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E45A48F827B60E6700CBD876 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +67,10 @@
 		E45A492F27B6146000CBD876 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		E45A493027B6146000CBD876 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		E45A493227B6150F00CBD876 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E45A493527B617DF00CBD876 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		E45A493627B617DF00CBD876 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		E45A493B27B6183900CBD876 /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		E45A493C27B6183900CBD876 /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +108,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E455E9DB27B636C400BFE169 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E455E9DC27B636D000BFE169 /* UITableViewCell */,
+				E455E9DD27B636E300BFE169 /* UICollectionCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E455E9DC27B636D000BFE169 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E455E9DE27B6371500BFE169 /* HomeTableViewCell.h */,
+				E455E9DF27B6371500BFE169 /* HomeTableViewCell.m */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		E455E9DD27B636E300BFE169 /* UICollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICollectionCell;
+			sourceTree = "<group>";
+		};
 		E45A48EB27B60E6700CBD876 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +165,9 @@
 				E45A48FE27B60E6700CBD876 /* ViewController.m */,
 				E45A493027B6146000CBD876 /* BaseVC.h */,
 				E45A492F27B6146000CBD876 /* BaseVC.m */,
+				E45A493327B617B300CBD876 /* VC */,
+				E45A493427B617BE00CBD876 /* View */,
+				E455E9DB27B636C400BFE169 /* Cell */,
 				E45A490027B60E6700CBD876 /* Main.storyboard */,
 				E45A490327B60E6800CBD876 /* Assets.xcassets */,
 				E45A490527B60E6800CBD876 /* LaunchScreen.storyboard */,
@@ -157,6 +194,24 @@
 				E45A491F27B60E6900CBD876 /* OCCommonLibraryUITestsLaunchTests.m */,
 			);
 			path = OCCommonLibraryUITests;
+			sourceTree = "<group>";
+		};
+		E45A493327B617B300CBD876 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E45A493527B617DF00CBD876 /* HomeVC.h */,
+				E45A493627B617DF00CBD876 /* HomeVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		E45A493427B617BE00CBD876 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E45A493B27B6183900CBD876 /* HomeView.h */,
+				E45A493C27B6183900CBD876 /* HomeView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FCE7907EAAA38C5EE8AB8E40 /* Frameworks */ = {
@@ -343,7 +398,10 @@
 			files = (
 				E45A48FF27B60E6700CBD876 /* ViewController.m in Sources */,
 				E45A48F927B60E6700CBD876 /* AppDelegate.m in Sources */,
+				E455E9E027B6371500BFE169 /* HomeTableViewCell.m in Sources */,
 				E45A490A27B60E6800CBD876 /* main.m in Sources */,
+				E45A493D27B6183900CBD876 /* HomeView.m in Sources */,
+				E45A493727B617DF00CBD876 /* HomeVC.m in Sources */,
 				E45A493127B6146000CBD876 /* BaseVC.m in Sources */,
 				E45A492E27B6134500CBD876 /* Tools.m in Sources */,
 			);

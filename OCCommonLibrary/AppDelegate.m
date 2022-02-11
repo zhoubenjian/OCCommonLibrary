@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "HomeVC.h"
 
 #import "Tools.h"
 
@@ -19,13 +20,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self createNavigationVC];
     return YES;
 }
 
 - (void)createNavigationVC {
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    self.navigation = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    self.navigation = [[UINavigationController alloc] initWithRootViewController:[[HomeVC alloc] init]];
     
     /* 修复Swift5.5后，iOS 13导航栏黑色背景 */
     if (@available(iOS 13.0, *)) {
