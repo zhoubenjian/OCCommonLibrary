@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		34507053896425C471F73F3A /* Pods_OCCommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29792C05246BEB3DC2EE2E46 /* Pods_OCCommonLibrary.framework */; };
+		E407E5CD27BA351D00EE57D7 /* CommonCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E407E5CC27BA351D00EE57D7 /* CommonCollectionVC.m */; };
+		E407E5D027BA355500EE57D7 /* CommonCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E407E5CF27BA355500EE57D7 /* CommonCollectionView.m */; };
+		E407E5D327BA412600EE57D7 /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E407E5D227BA412600EE57D7 /* CommonCollectionViewCell.m */; };
+		E407E5D627BA5F6200EE57D7 /* WaterCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E407E5D527BA5F6200EE57D7 /* WaterCollectionVC.m */; };
+		E407E5D927BA600000EE57D7 /* HighCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E407E5D827BA600000EE57D7 /* HighCollectionViewCell.m */; };
+		E407E5DC27BA60DD00EE57D7 /* LowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E407E5DB27BA60DD00EE57D7 /* LowCollectionViewCell.m */; };
+		E407E5E027BA61B600EE57D7 /* TwoColumnWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E407E5DF27BA61B600EE57D7 /* TwoColumnWaterFlowLayout.m */; };
 		E455E9E027B6371500BFE169 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E455E9DF27B6371500BFE169 /* HomeTableViewCell.m */; };
 		E45A48F927B60E6700CBD876 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A48F827B60E6700CBD876 /* AppDelegate.m */; };
 		E45A48FF27B60E6700CBD876 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A48FE27B60E6700CBD876 /* ViewController.m */; };
@@ -48,6 +55,20 @@
 		29792C05246BEB3DC2EE2E46 /* Pods_OCCommonLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCCommonLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6834BF76944A16A4D3AD9B8A /* Pods-OCCommonLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCommonLibrary.debug.xcconfig"; path = "Target Support Files/Pods-OCCommonLibrary/Pods-OCCommonLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		D1968A3CE295F0352A0E2C77 /* Pods-OCCommonLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCommonLibrary.release.xcconfig"; path = "Target Support Files/Pods-OCCommonLibrary/Pods-OCCommonLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		E407E5CB27BA351D00EE57D7 /* CommonCollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonCollectionVC.h; sourceTree = "<group>"; };
+		E407E5CC27BA351D00EE57D7 /* CommonCollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionVC.m; sourceTree = "<group>"; };
+		E407E5CE27BA355500EE57D7 /* CommonCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonCollectionView.h; sourceTree = "<group>"; };
+		E407E5CF27BA355500EE57D7 /* CommonCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionView.m; sourceTree = "<group>"; };
+		E407E5D127BA412600EE57D7 /* CommonCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonCollectionViewCell.h; sourceTree = "<group>"; };
+		E407E5D227BA412600EE57D7 /* CommonCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewCell.m; sourceTree = "<group>"; };
+		E407E5D427BA5F6200EE57D7 /* WaterCollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterCollectionVC.h; sourceTree = "<group>"; };
+		E407E5D527BA5F6200EE57D7 /* WaterCollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterCollectionVC.m; sourceTree = "<group>"; };
+		E407E5D727BA5FFF00EE57D7 /* HighCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighCollectionViewCell.h; sourceTree = "<group>"; };
+		E407E5D827BA600000EE57D7 /* HighCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighCollectionViewCell.m; sourceTree = "<group>"; };
+		E407E5DA27BA60DD00EE57D7 /* LowCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LowCollectionViewCell.h; sourceTree = "<group>"; };
+		E407E5DB27BA60DD00EE57D7 /* LowCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LowCollectionViewCell.m; sourceTree = "<group>"; };
+		E407E5DE27BA61B600EE57D7 /* TwoColumnWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoColumnWaterFlowLayout.h; sourceTree = "<group>"; };
+		E407E5DF27BA61B600EE57D7 /* TwoColumnWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoColumnWaterFlowLayout.m; sourceTree = "<group>"; };
 		E455E9DE27B6371500BFE169 /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		E455E9DF27B6371500BFE169 /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		E45A48F427B60E6700CBD876 /* OCCommonLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCCommonLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +138,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E407E5DD27BA619B00EE57D7 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E407E5DE27BA61B600EE57D7 /* TwoColumnWaterFlowLayout.h */,
+				E407E5DF27BA61B600EE57D7 /* TwoColumnWaterFlowLayout.m */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
 		E455E9DB27B636C400BFE169 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +170,12 @@
 		E455E9DD27B636E300BFE169 /* UICollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				E407E5D127BA412600EE57D7 /* CommonCollectionViewCell.h */,
+				E407E5D227BA412600EE57D7 /* CommonCollectionViewCell.m */,
+				E407E5D727BA5FFF00EE57D7 /* HighCollectionViewCell.h */,
+				E407E5D827BA600000EE57D7 /* HighCollectionViewCell.m */,
+				E407E5DA27BA60DD00EE57D7 /* LowCollectionViewCell.h */,
+				E407E5DB27BA60DD00EE57D7 /* LowCollectionViewCell.m */,
 			);
 			path = UICollectionCell;
 			sourceTree = "<group>";
@@ -179,6 +215,7 @@
 				E45A493327B617B300CBD876 /* VC */,
 				E45A493427B617BE00CBD876 /* View */,
 				E455E9DB27B636C400BFE169 /* Cell */,
+				E407E5DD27BA619B00EE57D7 /* FlowLayout */,
 				E45A490027B60E6700CBD876 /* Main.storyboard */,
 				E45A490327B60E6800CBD876 /* Assets.xcassets */,
 				E45A490527B60E6800CBD876 /* LaunchScreen.storyboard */,
@@ -216,6 +253,10 @@
 				E4E288F127B9F4A6004B814A /* DefaultVC.m */,
 				E4E288F327BA073D004B814A /* SelfAdaptionVC.h */,
 				E4E288F427BA073D004B814A /* SelfAdaptionVC.m */,
+				E407E5CB27BA351D00EE57D7 /* CommonCollectionVC.h */,
+				E407E5CC27BA351D00EE57D7 /* CommonCollectionVC.m */,
+				E407E5D427BA5F6200EE57D7 /* WaterCollectionVC.h */,
+				E407E5D527BA5F6200EE57D7 /* WaterCollectionVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -225,6 +266,8 @@
 			children = (
 				E45A493B27B6183900CBD876 /* HomeView.h */,
 				E45A493C27B6183900CBD876 /* HomeView.m */,
+				E407E5CE27BA355500EE57D7 /* CommonCollectionView.h */,
+				E407E5CF27BA355500EE57D7 /* CommonCollectionView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -413,14 +456,21 @@
 			files = (
 				E45A48FF27B60E6700CBD876 /* ViewController.m in Sources */,
 				E4E288F227B9F4A6004B814A /* DefaultVC.m in Sources */,
+				E407E5E027BA61B600EE57D7 /* TwoColumnWaterFlowLayout.m in Sources */,
+				E407E5DC27BA60DD00EE57D7 /* LowCollectionViewCell.m in Sources */,
 				E45A48F927B60E6700CBD876 /* AppDelegate.m in Sources */,
 				E455E9E027B6371500BFE169 /* HomeTableViewCell.m in Sources */,
 				E4E288F527BA073D004B814A /* SelfAdaptionVC.m in Sources */,
 				E45A490A27B60E6800CBD876 /* main.m in Sources */,
 				E45A493D27B6183900CBD876 /* HomeView.m in Sources */,
+				E407E5D327BA412600EE57D7 /* CommonCollectionViewCell.m in Sources */,
 				E45A493727B617DF00CBD876 /* HomeVC.m in Sources */,
 				E45A493127B6146000CBD876 /* BaseVC.m in Sources */,
+				E407E5D927BA600000EE57D7 /* HighCollectionViewCell.m in Sources */,
+				E407E5D627BA5F6200EE57D7 /* WaterCollectionVC.m in Sources */,
+				E407E5CD27BA351D00EE57D7 /* CommonCollectionVC.m in Sources */,
 				E4E288F827BA0795004B814A /* SelfAdaptionTableViewCell.m in Sources */,
+				E407E5D027BA355500EE57D7 /* CommonCollectionView.m in Sources */,
 				E45A492E27B6134500CBD876 /* Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

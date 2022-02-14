@@ -107,6 +107,14 @@
             self.SkipToSelfAdaptVC();
             break;
             
+        case 2:
+            self.SkipToCommonCollectionVC();
+            break;
+            
+        case 3:
+            self.SkipToWaterCollectionVC();
+            break;
+            
         default:
             break;
     }

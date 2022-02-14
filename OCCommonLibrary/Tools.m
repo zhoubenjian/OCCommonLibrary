@@ -6,6 +6,7 @@
 //
 
 #import "Tools.h"
+#import "MBProgressHUD.h"
 
 @implementation Tools
 
@@ -31,7 +32,20 @@
     return [UIColor colorWithRed:(float)(red / 255.0f) green:(float)(green / 255.0f) blue:(float)(blue / 255.0f) alpha:1.0f];
 }
 
-/*********        UILabel        *********/
++ (void)ShowMsg:(NSString *)msg {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        //获取主线程
+        MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:([UIApplication sharedApplication].delegate).window animated:YES];
+        HUD.mode = MBProgressHUDModeText;
+        HUD.detailsLabel.text = msg;
+        [HUD hideAnimated:NO afterDelay:2];
+    });
+    
+}
+
+#pragma mark - UILabel
 // UILabel属性（背景颜色 + 字体颜色 + 字体大小 + 文本位置）
 + (void)labelProperty:(UILabel *)label andBGColor:(NSString *)bgColorStr andTxt:(NSString *)txtStr andTxtColor:(NSString *)txtColorStr andTxtFont:(CGFloat)txtFont andTxtAlignment:(NSTextAlignment)txtAlignment {
     

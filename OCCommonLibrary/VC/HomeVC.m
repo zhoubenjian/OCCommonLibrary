@@ -8,6 +8,8 @@
 #import "HomeVC.h"
 #import "DefaultVC.h"
 #import "SelfAdaptionVC.h"
+#import "CommonCollectionVC.h"
+#import "WaterCollectionVC.h"
 
 #import "Masonry.h"
 
@@ -23,7 +25,7 @@
     self.title = @"主页";
     self.view.backgroundColor = UIColor.whiteColor;
     
-    self.dataArray = [[NSMutableArray alloc] initWithObjects:@"DefaultTableView", @"SelfAdaptTableView", nil];
+    self.dataArray = [[NSMutableArray alloc] initWithObjects:@"DefaultTableView", @"SelfAdaptTableView", @"CommonCollectionView", @"WaterCollectionView", nil];
     [self createUI];
 }
 
@@ -51,6 +53,16 @@
     self.mainView.SkipToSelfAdaptVC = ^{
         SelfAdaptionVC *saVC = [[SelfAdaptionVC alloc] init];
         [Self.navigationController pushViewController:saVC animated:YES];
+    };
+    
+    self.mainView.SkipToCommonCollectionVC = ^{
+        CommonCollectionVC *ccVC = [[CommonCollectionVC alloc] init];
+        [Self.navigationController pushViewController:ccVC animated:YES];
+    };
+    
+    self.mainView.SkipToWaterCollectionVC = ^{
+        WaterCollectionVC *wcVC = [[WaterCollectionVC alloc] init];
+        [Self.navigationController pushViewController:wcVC animated:YES];
     };
 }
 
