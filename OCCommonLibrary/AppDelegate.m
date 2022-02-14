@@ -8,6 +8,8 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "HomeVC.h"
+#import "DefaultVC.h"
+#import "SelfAdaptionVC.h"
 
 #import "Tools.h"
 
@@ -22,6 +24,7 @@
     // Override point for customization after application launch.
     
     [self createNavigationVC];
+//    [self createNormalRootVC];
     return YES;
 }
 
@@ -48,6 +51,14 @@
     [self.navigation.navigationBar setBarTintColor:[Tools colorWithHex:@"#EE82EE"]];
     [self.navigation.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:17.0],
                                                      NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.window.rootViewController = self.navigation;
+    [self.window makeKeyAndVisible];
+}
+
+- (void)createNormalRootVC {
+    
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.navigation = [[UINavigationController alloc] initWithRootViewController:[[DefaultVC alloc] init]];
     self.window.rootViewController = self.navigation;
     [self.window makeKeyAndVisible];
 }

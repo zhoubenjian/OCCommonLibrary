@@ -22,6 +22,9 @@
 		E45A493127B6146000CBD876 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A492F27B6146000CBD876 /* BaseVC.m */; };
 		E45A493727B617DF00CBD876 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A493627B617DF00CBD876 /* HomeVC.m */; };
 		E45A493D27B6183900CBD876 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A493C27B6183900CBD876 /* HomeView.m */; };
+		E4E288F227B9F4A6004B814A /* DefaultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E288F127B9F4A6004B814A /* DefaultVC.m */; };
+		E4E288F527BA073D004B814A /* SelfAdaptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E288F427BA073D004B814A /* SelfAdaptionVC.m */; };
+		E4E288F827BA0795004B814A /* SelfAdaptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E288F727BA0795004B814A /* SelfAdaptionTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,12 @@
 		E45A493627B617DF00CBD876 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		E45A493B27B6183900CBD876 /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
 		E45A493C27B6183900CBD876 /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		E4E288F027B9F4A6004B814A /* DefaultVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultVC.h; sourceTree = "<group>"; };
+		E4E288F127B9F4A6004B814A /* DefaultVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultVC.m; sourceTree = "<group>"; };
+		E4E288F327BA073D004B814A /* SelfAdaptionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfAdaptionVC.h; sourceTree = "<group>"; };
+		E4E288F427BA073D004B814A /* SelfAdaptionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfAdaptionVC.m; sourceTree = "<group>"; };
+		E4E288F627BA0795004B814A /* SelfAdaptionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfAdaptionTableViewCell.h; sourceTree = "<group>"; };
+		E4E288F727BA0795004B814A /* SelfAdaptionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfAdaptionTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,8 @@
 			children = (
 				E455E9DE27B6371500BFE169 /* HomeTableViewCell.h */,
 				E455E9DF27B6371500BFE169 /* HomeTableViewCell.m */,
+				E4E288F627BA0795004B814A /* SelfAdaptionTableViewCell.h */,
+				E4E288F727BA0795004B814A /* SelfAdaptionTableViewCell.m */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -201,6 +212,10 @@
 			children = (
 				E45A493527B617DF00CBD876 /* HomeVC.h */,
 				E45A493627B617DF00CBD876 /* HomeVC.m */,
+				E4E288F027B9F4A6004B814A /* DefaultVC.h */,
+				E4E288F127B9F4A6004B814A /* DefaultVC.m */,
+				E4E288F327BA073D004B814A /* SelfAdaptionVC.h */,
+				E4E288F427BA073D004B814A /* SelfAdaptionVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -397,12 +412,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45A48FF27B60E6700CBD876 /* ViewController.m in Sources */,
+				E4E288F227B9F4A6004B814A /* DefaultVC.m in Sources */,
 				E45A48F927B60E6700CBD876 /* AppDelegate.m in Sources */,
 				E455E9E027B6371500BFE169 /* HomeTableViewCell.m in Sources */,
+				E4E288F527BA073D004B814A /* SelfAdaptionVC.m in Sources */,
 				E45A490A27B60E6800CBD876 /* main.m in Sources */,
 				E45A493D27B6183900CBD876 /* HomeView.m in Sources */,
 				E45A493727B617DF00CBD876 /* HomeVC.m in Sources */,
 				E45A493127B6146000CBD876 /* BaseVC.m in Sources */,
+				E4E288F827BA0795004B814A /* SelfAdaptionTableViewCell.m in Sources */,
 				E45A492E27B6134500CBD876 /* Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

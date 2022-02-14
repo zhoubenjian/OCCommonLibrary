@@ -69,6 +69,7 @@
 // 加载数据
 - (void)loadData:(NSMutableArray *)dataArray {
     self.data = [dataArray mutableCopy];
+    NSLog(@"%@", self.data);
     // 刷新数据
     [self.tb reloadData];
 }
@@ -90,10 +91,28 @@
 
 
 
+#pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 50.0;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    switch (indexPath.row) {
+        case 0:
+            self.SkipToDefaultVC();
+            break;
+            
+        case 1:
+            self.SkipToSelfAdaptVC();
+            break;
+            
+        default:
+            break;
+    }
+}
+
+#pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.data.count;
 }

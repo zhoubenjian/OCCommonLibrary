@@ -6,6 +6,8 @@
 //
 
 #import "HomeVC.h"
+#import "DefaultVC.h"
+#import "SelfAdaptionVC.h"
 
 #import "Masonry.h"
 
@@ -21,14 +23,15 @@
     self.title = @"主页";
     self.view.backgroundColor = UIColor.whiteColor;
     
-    self.dataArray = [[NSMutableArray alloc] initWithObjects:@"DefaultTableView", @"DefaultTableView", @"DefaultTableView", @"DefaultTableView", nil];
+    self.dataArray = [[NSMutableArray alloc] initWithObjects:@"DefaultTableView", @"SelfAdaptTableView", nil];
     [self createUI];
-    
 }
 
 - (void)createUI {
     
     self.mainView = [[HomeView alloc] init];
+    // 加载数据
+    [self.mainView loadData:self.dataArray];
     [self.view addSubview:self.mainView];
     
     
@@ -39,7 +42,16 @@
     
     
     
-    [self.mainView loadData:self.dataArray];
+    __weak typeof(self)Self = self;
+    self.mainView.SkipToDefaultVC = ^{
+        DefaultVC *dVC = [[DefaultVC alloc] init];
+        [Self.navigationController pushViewController:dVC animated:YES];
+    };
+    
+    self.mainView.SkipToSelfAdaptVC = ^{
+        SelfAdaptionVC *saVC = [[SelfAdaptionVC alloc] init];
+        [Self.navigationController pushViewController:saVC animated:YES];
+    };
 }
 
 @end

@@ -37,7 +37,7 @@
 #define kBOTTOM_SAFE_HEIGHT (kIS_IPHONE_X ? 34.0f : 0.0f)
 /* iPhoneX的状态栏高度差值 */
 #define kTOPBAR_DIFF_HEIGHT (kIS_IPHONE_X ? 24.0f : 0.0f)
-/* 导航条和Tabbar总高度 */
+/* 导航栏和Tabbar总高度 */
 #define kNAVIBAR_HEIGHT_and_kTABBAR_HEIGHT (kNAVIBAR_HEIGHT + kTABBAR_HEIGHT)
 
 
