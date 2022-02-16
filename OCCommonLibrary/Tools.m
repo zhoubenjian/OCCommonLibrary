@@ -32,6 +32,17 @@
     return [UIColor colorWithRed:(float)(red / 255.0f) green:(float)(green / 255.0f) blue:(float)(blue / 255.0f) alpha:1.0f];
 }
 
++ (UIColor *)randomColor {
+    
+    CGFloat red = (arc4random() % 256) / 255.0f;
+    CGFloat green = (arc4random() % 256) / 255.0f;
+    CGFloat blue = (arc4random() % 256) / 255.0f;
+    
+    return [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
+}
+
+
+
 + (void)ShowMsg:(NSString *)msg {
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -44,6 +55,8 @@
     });
     
 }
+
+
 
 #pragma mark - UILabel
 // UILabel属性（背景颜色 + 字体颜色 + 字体大小 + 文本位置）

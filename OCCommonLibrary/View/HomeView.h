@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) void (^SkipToSelfAdaptVC)(void);
 @property (copy, nonatomic) void (^SkipToCommonCollectionVC)(void);
 @property (copy, nonatomic) void (^SkipToWaterCollectionVC)(void);
+@property (copy, nonatomic) void (^SkipToComplexVC)(void);
 
 @property (strong, nonatomic) NSMutableArray *data;
 

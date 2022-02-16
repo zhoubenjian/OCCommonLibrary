@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - 十六进制颜色
 + (UIColor *)colorWithHex:(NSString *)hexColor;
 
++ (UIColor *)randomColor;
+
 
 
 #pragma mark - MBProgressHUD

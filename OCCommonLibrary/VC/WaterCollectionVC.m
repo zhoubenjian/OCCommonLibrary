@@ -29,8 +29,10 @@
 - (void)createUI {
     
     self.waterCV = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.tcwFlowLayout];
+    /* 注册 */
     [self.waterCV registerClass:[HighCollectionViewCell class] forCellWithReuseIdentifier:@"high"];
     [self.waterCV registerClass:[LowCollectionViewCell class] forCellWithReuseIdentifier:@"low"];
+    /* 注册 */
     self.waterCV.delegate = self;
     self.waterCV.dataSource = self;
     [self.view addSubview:self.waterCV];

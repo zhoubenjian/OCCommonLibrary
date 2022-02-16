@@ -115,6 +115,9 @@
             self.SkipToWaterCollectionVC();
             break;
             
+        case 4:
+            self.SkipToComplexVC();
+            
         default:
             break;
     }

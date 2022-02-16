@@ -10,6 +10,7 @@
 #import "HomeVC.h"
 #import "DefaultVC.h"
 #import "SelfAdaptionVC.h"
+#import "ComplexVC.h"
 
 #import "Tools.h"
 
@@ -31,7 +32,7 @@
 - (void)createNavigationVC {
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    self.navigation = [[UINavigationController alloc] initWithRootViewController:[[HomeVC alloc] init]];
+    self.navigation = [[UINavigationController alloc] initWithRootViewController:[[ComplexVC alloc] init]];
     
     /* 修复Swift5.5后，iOS 13导航栏黑色背景 */
     if (@available(iOS 13.0, *)) {

@@ -15,6 +15,9 @@
 		E407E5D927BA600000EE57D7 /* HighCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E407E5D827BA600000EE57D7 /* HighCollectionViewCell.m */; };
 		E407E5DC27BA60DD00EE57D7 /* LowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E407E5DB27BA60DD00EE57D7 /* LowCollectionViewCell.m */; };
 		E407E5E027BA61B600EE57D7 /* TwoColumnWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E407E5DF27BA61B600EE57D7 /* TwoColumnWaterFlowLayout.m */; };
+		E4229B9327BC9E0900F6A24B /* ComplexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4229B9227BC9E0900F6A24B /* ComplexVC.m */; };
+		E4229B9627BC9E3700F6A24B /* ComplexView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4229B9527BC9E3700F6A24B /* ComplexView.m */; };
+		E4229B9927BCA7EF00F6A24B /* HCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4229B9827BCA7EF00F6A24B /* HCollectionViewCell.m */; };
 		E455E9E027B6371500BFE169 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E455E9DF27B6371500BFE169 /* HomeTableViewCell.m */; };
 		E45A48F927B60E6700CBD876 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A48F827B60E6700CBD876 /* AppDelegate.m */; };
 		E45A48FF27B60E6700CBD876 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A48FE27B60E6700CBD876 /* ViewController.m */; };
@@ -69,6 +72,12 @@
 		E407E5DB27BA60DD00EE57D7 /* LowCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LowCollectionViewCell.m; sourceTree = "<group>"; };
 		E407E5DE27BA61B600EE57D7 /* TwoColumnWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoColumnWaterFlowLayout.h; sourceTree = "<group>"; };
 		E407E5DF27BA61B600EE57D7 /* TwoColumnWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoColumnWaterFlowLayout.m; sourceTree = "<group>"; };
+		E4229B9127BC9E0900F6A24B /* ComplexVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplexVC.h; sourceTree = "<group>"; };
+		E4229B9227BC9E0900F6A24B /* ComplexVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplexVC.m; sourceTree = "<group>"; };
+		E4229B9427BC9E3700F6A24B /* ComplexView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplexView.h; sourceTree = "<group>"; };
+		E4229B9527BC9E3700F6A24B /* ComplexView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplexView.m; sourceTree = "<group>"; };
+		E4229B9727BCA7EF00F6A24B /* HCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCollectionViewCell.h; sourceTree = "<group>"; };
+		E4229B9827BCA7EF00F6A24B /* HCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCollectionViewCell.m; sourceTree = "<group>"; };
 		E455E9DE27B6371500BFE169 /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		E455E9DF27B6371500BFE169 /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		E45A48F427B60E6700CBD876 /* OCCommonLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCCommonLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +185,8 @@
 				E407E5D827BA600000EE57D7 /* HighCollectionViewCell.m */,
 				E407E5DA27BA60DD00EE57D7 /* LowCollectionViewCell.h */,
 				E407E5DB27BA60DD00EE57D7 /* LowCollectionViewCell.m */,
+				E4229B9727BCA7EF00F6A24B /* HCollectionViewCell.h */,
+				E4229B9827BCA7EF00F6A24B /* HCollectionViewCell.m */,
 			);
 			path = UICollectionCell;
 			sourceTree = "<group>";
@@ -257,6 +268,8 @@
 				E407E5CC27BA351D00EE57D7 /* CommonCollectionVC.m */,
 				E407E5D427BA5F6200EE57D7 /* WaterCollectionVC.h */,
 				E407E5D527BA5F6200EE57D7 /* WaterCollectionVC.m */,
+				E4229B9127BC9E0900F6A24B /* ComplexVC.h */,
+				E4229B9227BC9E0900F6A24B /* ComplexVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -268,6 +281,8 @@
 				E45A493C27B6183900CBD876 /* HomeView.m */,
 				E407E5CE27BA355500EE57D7 /* CommonCollectionView.h */,
 				E407E5CF27BA355500EE57D7 /* CommonCollectionView.m */,
+				E4229B9427BC9E3700F6A24B /* ComplexView.h */,
+				E4229B9527BC9E3700F6A24B /* ComplexView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -461,13 +476,16 @@
 				E45A48F927B60E6700CBD876 /* AppDelegate.m in Sources */,
 				E455E9E027B6371500BFE169 /* HomeTableViewCell.m in Sources */,
 				E4E288F527BA073D004B814A /* SelfAdaptionVC.m in Sources */,
+				E4229B9627BC9E3700F6A24B /* ComplexView.m in Sources */,
 				E45A490A27B60E6800CBD876 /* main.m in Sources */,
 				E45A493D27B6183900CBD876 /* HomeView.m in Sources */,
 				E407E5D327BA412600EE57D7 /* CommonCollectionViewCell.m in Sources */,
 				E45A493727B617DF00CBD876 /* HomeVC.m in Sources */,
 				E45A493127B6146000CBD876 /* BaseVC.m in Sources */,
+				E4229B9327BC9E0900F6A24B /* ComplexVC.m in Sources */,
 				E407E5D927BA600000EE57D7 /* HighCollectionViewCell.m in Sources */,
 				E407E5D627BA5F6200EE57D7 /* WaterCollectionVC.m in Sources */,
+				E4229B9927BCA7EF00F6A24B /* HCollectionViewCell.m in Sources */,
 				E407E5CD27BA351D00EE57D7 /* CommonCollectionVC.m in Sources */,
 				E4E288F827BA0795004B814A /* SelfAdaptionTableViewCell.m in Sources */,
 				E407E5D027BA355500EE57D7 /* CommonCollectionView.m in Sources */,
